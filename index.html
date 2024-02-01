@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <title>Controle de Estoque</title>
+  </head>
+  <body>
+    <main>
+      <div class="reccao">
+        <div>
+          <h2>Receção:</h2>
+          <label for="quantidadeAdicionarRececao">Adicionar:</label>
+          <input type="number" id="quantidadeAdicionarRececao" />
+          <button onclick="adicionarQuantidadeRececao()">Adicionar</button>
+        </div>
+        <div>
+          <label for="quantidadeRetirarRececao">Retirar:</label>
+          <input type="number" id="quantidadeRetirarRececao" />
+          <button onclick="retirarQuantidadeRececao()">Retirar</button>
+        </div>
+        <div>
+          <label for="enviarparaestoque">Enviar ao Estoque:</label>
+          <input type="number" id="enviarparaestoque" />
+          <button onclick="enviaraoEstoque()">Enviar</button>
+        </div>
+
+        <p>Total em Receção: <span id="totalRececao">0</span></p>
+        <progress id="progressRececao" value="0" max="100"></progress>
+        <span id="porcentagemRececao">0%</span>
+        <p class="aviso">* Máx em Receção: <span>1.000 *</span></p>
+      </div>
+
+      <hr />
+
+      <div class="estoque">
+        <div>
+          <h2>Estoque:</h2>
+
+          <p>Recebido da Receção: <span id="RecebidodaRececao">0</span></p>
+
+          <label for="quantidadeAdicionarEstoque">Adicionar:</label>
+          <input type="number" id="quantidadeAdicionarEstoque" />
+          <button onclick="adicionarQuantidadeEstoque()">Adicionar</button>
+        </div>
+        <div>
+          <label for="quantidadeRetirar">Retirar:</label>
+          <input type="number" id="quantidadeRetirar" />
+          <button onclick="retirarQuantidadeEstoque()">Retirar</button>
+        </div>
+
+        <p>Total em Estoque: <span id="totalEstoque">0</span></p>
+        <progress id="progressEstoque" value="0" max="100"></progress>
+        <span id="porcentagemEstoque">0%</span>
+        <p class="aviso">* Máx em Estoque: <span>100 *</span></p>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

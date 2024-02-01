@@ -1,0 +1,143 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #213a1c;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0.5rem;
+  }
+  main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 5rem;
+    padding: 1rem;
+  }
+
+  hr{
+    background-color: #15cc1e;
+    width: 0.1px;
+    border: none;
+  }
+
+  label {
+    color: #55f35d;
+  }
+
+  input {
+    background-color: #00000000; 
+    color: #ffffff; 
+    border: 1px solid #55f35d;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 12px 5px;
+    width: 3.2rem;
+    font-size: 0.9rem;
+  }
+
+  input:focus {
+    border-color: #15cc1e; 
+    outline: none;
+  }
+
+  button {
+    background-color: #55f35d; 
+    color: #232323; 
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 20px 0 0;
+    transition: 0.3s ease;
+    border-radius: 3px;
+    font-size: 0.9rem;
+  }
+  button:hover{
+    background-color: #15cc1e;
+  }
+
+  p {
+    color: #55f35d; 
+    font-weight: 600;
+  }
+
+  #totalEstoque, #totalRececao, #RecebidodaRececao{
+    color: #55f35d; 
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+
+  p.message-container {
+    font-size: 24px;
+    font-weight: 600;
+    z-index: 1111;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 100%;
+  }
+
+  p.aviso{
+    font-size: 0.8rem;
+    padding: 0.5rem 0;
+    font-weight: 500;
+  }
+  div.background-message{
+    position: fixed;
+    background: #0c0c0cad;
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
+
+  h2 {
+    padding-top: 1rem;
+    color: #55f35d;
+  }
+
+  button.fechar{
+    right: 0%;
+    position: absolute;
+    margin: 0;
+    padding: 1rem 1.2rem;
+    font-size: 1rem;
+    color: white;
+  }
+
+  #porcentagemRececao, #porcentagemEstoque {
+    font-size: 0.9rem;
+    color: #55f35d;
+  }
+  
+  progress {
+    display:block;
+    -webkit-appearance: none;
+    margin: 0.5rem 0;
+  }
+  
+  progress::-webkit-progress-bar {
+    background: rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 2px;
+  }
+  
+  progress::-webkit-progress-value {
+    border-radius: 1px;
+    background:#55f35d;
+  }
+
+  @media only screen and (max-width: 785px) {
+    hr{
+      display: none;
+    }
+  }
